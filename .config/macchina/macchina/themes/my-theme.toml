@@ -1,0 +1,49 @@
+# my-theme
+
+prefer_small_ascii = false
+
+spacing         = 3
+hide_ascii      = false
+key_color       = "#7067CF"
+separator       = ""
+
+[box]
+title           = " Katana-GF66 "
+border          = "plain"
+visible         = true
+
+
+[palette]
+glyph           = "  "
+visible         = true
+
+[bar]
+glyph           = "○"
+hide_delimiters = true
+visible         = true
+
+[box.inner_margin]
+x               = 2
+y               = 1
+
+
+[custom_ascii]
+color           = "#94251e"
+path="~/.config/macchina/themes/ubuntu.txt"
+
+[keys]
+host       =  "  host"
+kernel     =  "  kernel"
+distro     =  "  distro"
+packages   =  "󰏗  packages"
+terminal   =  "  terminal"
+shell      =  "  shell"
+cpu        =  "  cpu"
+cpu_load   =  "  cpu load"
+memory     =  "󰍛  memory"
+battery    =  "\uf240  battery"
+disk_space =  "\uf0a0  disk"
+uptime     =  "\ue641  uptime"
+backlight  =  "🕯️ brightness"
+de         =  "💻 de"
+wm         =  "🗗 wm"
