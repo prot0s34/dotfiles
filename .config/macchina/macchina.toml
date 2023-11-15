@@ -18,10 +18,10 @@ current_shell = true
 physical_cores = true
 
 # Display percentage next to memory usage
-memory_percentage = false
+# memory_percentage = false
 
 # Display percentage next to disk space usage
-disk_space_percentage = false
+# disk_space_percentage = false
 
 # Themes need to be placed in "$XDG_CONFIG_DIR/macchina/themes" beforehand.
 # e.g.:
@@ -53,4 +53,4 @@ theme = "Beryllium"
 #   - GPU
 #   - DiskSpace
 # Example:
-show = ["Host", "Machine", "Kernel", "Distribution", "OperatingSystem", "DesktopEnvironment", "WindowManager", "Backlight", "Packages", "LocalIP", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery", "GPU", "DiskSpace"]
+show = ["Host", "Machine", "Kernel", "Distribution", "OperatingSystem", "DesktopEnvironment", "WindowManager", "Backlight", "Packages", "LocalIP", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery"]
