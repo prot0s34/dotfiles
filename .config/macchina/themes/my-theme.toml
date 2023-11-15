@@ -3,7 +3,7 @@
 prefer_small_ascii = false
 
 spacing         = 3
-hide_ascii      = false
+hide_ascii      = true
 key_color       = "#7067CF"
 separator       = ""
 
