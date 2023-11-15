@@ -38,6 +38,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 # Aliases and Functions
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+[[ -f ~/.zsh/aliases-work.zsh]] && source ~/.zsh/aliases-work.zsh
 [[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
 
 
