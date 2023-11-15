@@ -28,7 +28,7 @@ disk_space_percentage = false
 #  if theme path is /home/foo/.config/macchina/themes/Sodium.toml
 #  theme should be uncommented and set to "Sodium"
 #
-theme = "my-theme"
+theme = "Beryllium"
 
 # Displays only the specified readouts.
 # Accepted values (case-sensitive):
@@ -53,4 +53,4 @@ theme = "my-theme"
 #   - GPU
 #   - DiskSpace
 # Example:
-show = ["Host", "Kernel", "Distribution", "Packages", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery", "GPU", "DiskSpace"]
+show = ["Host", "Machine", "Kernel", "Distribution", "OperatingSystem", "DesktopEnvironment", "WindowManager", "Backlight", "Packages", "LocalIP", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery", "GPU", "DiskSpace"]
