@@ -37,6 +37,7 @@ path="~/.config/macchina/themes/ubuntu.txt"
 
 [keys]
 host       =  "  host"
+machine    =  "\uf108 machine"
 kernel     =  "  kernel"
 distro     =  "  distro"
 packages   =  "󰏗  packages"
