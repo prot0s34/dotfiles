@@ -46,9 +46,6 @@ complete -C '/usr/local/bin/aws_completer' aws
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 eval "$(starship init zsh)"
 
-# Cargo ENV's
-#source "$HOME/.cargo/env"
-
 # Setup Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

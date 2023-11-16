@@ -30,4 +30,3 @@ alias contexts='kubectl config get-contexts'
 alias awsconfig='cat ~/.aws/config'
 alias awslogin='aws sso login; aws configure list-profiles'
 alias awsprofiles='aws configure list-profiles'
-
