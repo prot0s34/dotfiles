@@ -6,4 +6,6 @@
 lvim.format_on_save = true
 lvim.plugins = {
   { 'instant-markdown/vim-instant-markdown' },
+  { 'towolf/vim-helm' },
+  { 'mrjosh/helm-ls' },
 }
