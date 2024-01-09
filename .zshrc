@@ -26,6 +26,7 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
 export ZSH_THEME="agnoster"
+export COLORTERM=truecolor
 
 # This needs to be after the autoloads
 kubectl completion zsh > ~/.kubectl-completion
