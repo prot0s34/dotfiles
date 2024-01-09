@@ -48,6 +48,7 @@ eval "$(starship init zsh)"
 
 # Setup Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 # Start Neofetch
 macchina
