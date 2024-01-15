@@ -1,7 +1,7 @@
 # ENV Variables/PATHs
 export ZSH="${HOME}/.oh-my-zsh"
 export GOPATH="${HOME}/go"
-export GOROOT=/usr/local/go-1.20.5
+export GOROOT=/usr/lib/go
 export GOPATH=$HOME/projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
