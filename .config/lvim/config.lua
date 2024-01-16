@@ -28,3 +28,10 @@ if vim.fn.has('wsl') == 1 then
         cache_enabled = 0,
     }
 end
+
+vim.api.nvim_create_autocmd({'BufNewFile', 'BufRead'} , {
+    pattern = {'*/templates/*.yaml', '*/templates/*.tpl'},
+    callback = function()
+          vim.opt_local.filetype = 'helm'
+    end
+})
