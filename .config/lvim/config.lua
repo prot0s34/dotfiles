@@ -12,6 +12,7 @@ lvim.plugins = {
   { 'instant-markdown/vim-instant-markdown' },
   { 'towolf/vim-helm' },
   { 'mrjosh/helm-ls' },
+  { 'github/copilot.vim'}
 }
 
 if vim.fn.has('wsl') == 1 then
@@ -29,9 +30,33 @@ if vim.fn.has('wsl') == 1 then
     }
 end
 
+experimental = {
+  ghost_text = true,
+}
+
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+vim.g.copilot_tab_fallback = ""
+local cmp = require "cmp"
+
+lvim.builtin.cmp.mapping["<Tab>"] = function(fallback)
+  if cmp.visible() then
+    cmp.select_next_item()
+  else
+    local copilot_keys = vim.fn["copilot#Accept"]()
+    if copilot_keys ~= "" then
+      vim.api.nvim_feedkeys(copilot_keys, "i", true)
+    else
+      fallback()
+    end
+  end
+end
+
 vim.api.nvim_create_autocmd({'BufNewFile', 'BufRead'} , {
     pattern = {'*/templates/*.yaml', '*/templates/*.tpl'},
     callback = function()
           vim.opt_local.filetype = 'helm'
     end
 })
+
