@@ -19,4 +19,7 @@
     ca = commit --amend
     a  = add
     ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
-    
+    st = status
+    d  = diff
+    br = branch
+    ba = branch -a
