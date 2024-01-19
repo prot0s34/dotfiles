@@ -60,3 +60,4 @@ vim.api.nvim_create_autocmd({'BufNewFile', 'BufRead'} , {
     end
 })
 
+vim.opt.relativenumber = true
