@@ -13,3 +13,10 @@
 
 [diff]
     colorMoved = default
+
+[alias]
+    cm = commit -m
+    ca = commit --amend
+    a  = add
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    
