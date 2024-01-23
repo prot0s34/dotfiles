@@ -7,3 +7,6 @@ terminal config files
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator) dotfiles at - [.config/tmuxinator](.config/tmuxinator)
 - [neovim](https://github.com/neovim/neovim) dotfiles at - [.config/nvim](.config/nvim)
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) dotfiles at - [.zsh/](.zsh) + [.zshrc](.zshrc)
+
+
+- awesome-wm (needs lain, freedesktop, awesome-wm-widgets, themes/powerarrow)
