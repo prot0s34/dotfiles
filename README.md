@@ -9,4 +9,5 @@ terminal config files
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) dotfiles at - [.zsh/](.zsh) + [.zshrc](.zshrc)
 
 
-- awesome-wm (needs lain, freedesktop, awesome-wm-widgets, themes/powerarrow)
+- awesome-stable (needs lain, freedesktop, awesome-wm-widgets, themes/powerarrow)
+- awesome-git (thnx https://github.com/rxyhn/yoru)
