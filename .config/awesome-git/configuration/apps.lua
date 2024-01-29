@@ -11,9 +11,9 @@ return {
 		--- Default music client
 		music_player = "wezterm start --class music ncmpcpp",
 		--- Default text editor
-		text_editor = "wezterm start nvim",
+		text_editor = "alacritty",
 		--- Default code editor
-		code_editor = "code",
+		code_editor = "alacritty",
 		--- Default web browser
 		web_browser = "firefox",
 		--- Default file manager

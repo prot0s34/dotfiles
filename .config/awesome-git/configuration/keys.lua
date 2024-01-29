@@ -34,8 +34,12 @@ awful.keyboard.append_global_keybindings({
   awful.key({ mod, ctrl }, "s", function()
     local screenshot_path = os.getenv("HOME") .. "/screenshots/screenshot_" .. os.date("%Y%m%d%H%M%S") .. ".png"; awful.spawn.with_shell("scrot -s " .. screenshot_path .. " && xclip -selection clipboard -t image/png -i " .. screenshot_path)
   end, { description = "take screenshot", group = "launcher" }),
-  -- keyboard layout switch
+  -- keyboard layout switch reverse
   awful.key({ alt }, "Shift_L", function ()
+    kbdcfg.switch()
+  end, {description = "Switch keyboard layout", group = "client"}),
+  -- keyboard layout switch direct
+  awful.key({ shift }, "Alt_L", function ()
     kbdcfg.switch()
   end, {description = "Switch keyboard layout", group = "client"}),
 	--- App
@@ -51,7 +55,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open app launcher", group = "app" }),
 
 	--- Code editor
-	awful.key({ mod, shift }, "e", function()
+	awful.key({ mod, shift }, "E", function()
 		awful.spawn(apps.default.code_editor)
 	end, { description = "open code editor", group = "app" }),
 
@@ -74,7 +78,7 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ mod, ctrl }, "q", awesome.quit, { description = "quit awesome", group = "WM" }),
 
 	--- Show help
-	awful.key({ mod }, "F1", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
+	awful.key({ mod, alt }, "h", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
 
 	--- Client
 	--- ~~~~~~
