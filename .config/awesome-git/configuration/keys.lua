@@ -13,7 +13,7 @@ local apps = require("configuration.apps")
 -- keyboard layout func
 kbdcfg = {}
 kbdcfg.cmd = "setxkbmap"
-kbdcfg.layout = { "us", "ru" }
+kbdcfg.layout = { "us", "ru,us" }
 kbdcfg.current = 1  -- us is default
 kbdcfg.switch = function ()
    kbdcfg.current = kbdcfg.current % #(kbdcfg.layout) + 1
@@ -85,36 +85,36 @@ awful.keyboard.append_global_keybindings({
 	--- Focus client by direction
 	awful.key({ mod }, "k", function()
 		awful.client.focus.bydirection("up")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus up", group = "client" }),
 	awful.key({ mod }, "j", function()
 		awful.client.focus.bydirection("down")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus down", group = "client" }),
 	awful.key({ mod }, "h", function()
 		awful.client.focus.bydirection("left")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus left", group = "client" }),
 	awful.key({ mod }, "l", function()
 		awful.client.focus.bydirection("right")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus right", group = "client" }),
 
 	awful.key({ mod }, "Up", function()
 		awful.client.focus.bydirection("up")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus up", group = "client" }),
 	awful.key({ mod }, "Down", function()
 		awful.client.focus.bydirection("down")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus down", group = "client" }),
 	awful.key({ mod }, "Left", function()
 		awful.client.focus.bydirection("left")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus left", group = "client" }),
 	awful.key({ mod }, "Right", function()
 		awful.client.focus.bydirection("right")
-		bling.module.flash_focus.flashfocus(client.focus)
+		-- bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus right", group = "client" }),
 
 	--- Resize focused client

@@ -5,14 +5,14 @@ return {
 			key = "",
 			--- Coordinates
 			coordinates = {
-				"", --- lat
-				"", --- lon
+	      "36.8848",  
+	      "30.7040",  
 			},
 		},
 
 		--- Github activity
 		github = {
-			username = "prot0s34",
+      username = "prot0s34",
 		},
 	},
 }

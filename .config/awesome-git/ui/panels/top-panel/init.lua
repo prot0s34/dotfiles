@@ -261,7 +261,7 @@ return function(s)
 					tag_list(s),
 					{
 						system_tray(),
-						s.battery,
+            s.battery,
 						s.network,
 						notif_panel(),
 						layoutbox(),
