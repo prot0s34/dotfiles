@@ -11,7 +11,8 @@ require('nvim-tree').setup({
 require("nvim-autopairs").setup {}
 require("nvim-tree")
 require'colorizer'.setup()
-require('plugins/lualine')
-require('plugins/treesitter')
-require('plugins/indent-blankline')
-require('plugins/ts-autotag')
+require('lualine').setup()
+-- require('plugins/lualine')
+-- require('plugins/treesitter')
+-- require('plugins/indent-blankline')
+-- require('plugins/ts-autotag')

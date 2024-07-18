@@ -53,4 +53,4 @@ theme = "Beryllium"
 #   - GPU
 #   - DiskSpace
 # Example:
-show = ["Host", "Machine", "Kernel", "Distribution", "OperatingSystem", "DesktopEnvironment", "WindowManager", "Backlight", "Packages", "LocalIP", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery"]
+show = ["Host", "Kernel", "Distribution", "OperatingSystem", "DesktopEnvironment", "WindowManager", "Packages", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory", "Battery"]

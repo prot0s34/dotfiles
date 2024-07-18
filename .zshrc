@@ -6,8 +6,8 @@ export GOPATH=$HOME/projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$HOME/projects/go/bin
-export EDITOR=nvim
-export KUBE_EDITOR=nvim
+export EDITOR=lvim
+export KUBE_EDITOR=lvim
 export AWS_CLI_AUTO_PROMPT=on-partial
 export PATH=/usr/local/bin/:$PATH:$HOME/bin
 export PATH="${PATH}:${HOME}/.krew/bin"
@@ -15,6 +15,9 @@ export KUBECONFIG=~/.kube/config
 export GITLAB_HOME=/srv/gitlab
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/.local/bin:$PATH
+export DISABLE_AUTO_TITLE=true
+export GPG_TTY=$(tty)
+export PATH=$PATH:/opt/google-cloud-cli/bin/
 
 # ZSH Setup
 plugins=(z zsh-autosuggestions zsh-256color aws git docker kubectl terraform zsh-syntax-highlighting)
@@ -53,3 +56,10 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:chan
 
 # Start Neofetch
 macchina
+# neofetch
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/prot0s/google-cloud-sdk/path.zsh.inc' ]; then . '/home/prot0s/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/prot0s/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/prot0s/google-cloud-sdk/completion.zsh.inc'; fi

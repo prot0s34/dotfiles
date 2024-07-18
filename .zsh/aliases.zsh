@@ -1,8 +1,9 @@
 #Basics
-#alias ls="exa --icons --group-directories-first"
-#alias ll="exa -l --icons --no-user --git -s time"
+alias ls="exa --icons --group-directories-first"
+alias ll="exa -l --icons --no-user --git -s time"
 alias vi='lvim'
 alias vim='lvim'
+alias nvim='lvim'
 alias modvim='vi ~/.config/nvim/init.vim'
 alias sshconfig='cat ~/.ssh/config'
 alias modssh='vi ~/.ssh/config'
@@ -16,7 +17,11 @@ alias grep='grep -i --color'
 alias pip='pip3'
 alias tarz='tar --use-compress-program=pigz'
 alias nano='lvim'
-alias cat='batcat --paging=never' 
+alias cat='bat --paging=never' 
+alias tree='tre'
+
+# tmuxinator
+alias tmxs='tmuxinator start'
 
 # Kubernetes
 alias k='kubectl'
@@ -30,3 +35,7 @@ alias contexts='kubectl config get-contexts'
 alias awsconfig='cat ~/.aws/config'
 alias awslogin='aws sso login; aws configure list-profiles'
 alias awsprofiles='aws configure list-profiles'
+
+# TF/TG 
+alias tf='terraform'
+alias tg='terragrunt'
